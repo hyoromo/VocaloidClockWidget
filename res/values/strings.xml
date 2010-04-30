@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VocaloidClockWidget</string>
+    <string name="setting_name">VocaloidClockWidget:Setting</string>
+    <string name="setting_title">The character of each figure can be set.</string>
+    <string name="setting_dialog_title">Character selection</string>
+    <string name="setting_btn_ok">Widget Set</string>
+    <string name="setting_dialog_char_0">Miku Hatune</string>
+    <string name="setting_dialog_char_1">Rin Kagamine</string>
+    <string name="setting_dialog_char_2">Len Kagamine</string>
+    <string name="setting_dialog_char_3">Luka Megurine</string>
+    <string name="setting_dialog_char_4">MEIKO</string>
+    <string name="setting_dialog_char_5">KAITO</string>
+    <string name="setting_dialog_char_6">Gackpoid</string>
+    <string name="setting_dialog_char_7">Megpoid</string>
+    <string name="setting_dialog_char_8">Hachune Miku</string>
+    <string name="setting_dialog_char_9">Haku Yowane</string>
+    <string name="setting_dialog_char_10">Neru Akita</string>
+    <string name="setting_dialog_char_11">Tako Luka</string>
+    <string name="setting_dialog_char_12">It's me.</string>
+    <string name="app_manual_name">VocaloidClockWidget:Info</string>
+    <string name="menu_manual">info</string>
+    <string name="menu_exit">exit</string>
+</resources>

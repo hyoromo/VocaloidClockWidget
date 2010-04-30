@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VOCALOID時計ウィジェット</string>
+    <string name="setting_name">VOCALOID時計ウィジェット：設定</string>
+    <string name="setting_title">数字毎にキャラ設定できます</string>
+    <string name="setting_dialog_title">キャラ選択</string>
+    <string name="setting_btn_ok">ウィジェット配置</string>
+    <string name="setting_dialog_char_0">初音ミク</string>
+    <string name="setting_dialog_char_1">鏡音リン</string>
+    <string name="setting_dialog_char_2">鏡音レン</string>
+    <string name="setting_dialog_char_3">巡音ルカ</string>
+    <string name="setting_dialog_char_4">MEIKO</string>
+    <string name="setting_dialog_char_5">KAITO</string>
+    <string name="setting_dialog_char_6">がくっぽいど</string>
+    <string name="setting_dialog_char_7">めぐっぽいど</string>
+    <string name="setting_dialog_char_8">はちゅねミク</string>
+    <string name="setting_dialog_char_9">弱音ハク</string>
+    <string name="setting_dialog_char_10">亞北ネル</string>
+    <string name="setting_dialog_char_11">たこルカ</string>
+    <string name="setting_dialog_char_12">どう見ても俺</string>
+    <string name="app_manual_name">VOCALOID時計ウィジェット：情報</string>
+    <string name="menu_manual">情報</string>
+    <string name="menu_exit">終了</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+>
+    <ImageView
+        android:id="@+id/hour1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_00_0"
+    ></ImageView>
+    <ImageView
+        android:id="@+id/hour2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_00_0"
+    ></ImageView>
+    <ImageView
+        android:id="@+id/minute1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_00_0"
+    ></ImageView>
+    <ImageView
+        android:id="@+id/minute2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_00_0"
+    ></ImageView>
+    <ImageView
+        android:id="@+id/second1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_00_0"
+    ></ImageView>
+    <ImageView
+        android:id="@+id/second2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_00_0"
+    ></ImageView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+    <TableRow>
+        <ImageView
+            android:id="@+id/dialog_image_choise_grid_row_img"
+            android:layout_gravity="center_vertical"
+        ></ImageView>
+        <CheckBox
+            android:id="@+id/dialog_image_choise_grid_row_check"
+            android:layout_gravity="right|top"
+        ></CheckBox>
+    </TableRow>
+</TableLayout>

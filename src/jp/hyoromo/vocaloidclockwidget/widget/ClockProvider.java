@@ -11,23 +11,17 @@ import android.content.Intent;
 import android.net.Uri;
 
 public class ClockProvider extends AppWidgetProvider {
-    private static boolean mIsUpdate = true;
-
     @Override
     public void onEnabled(Context context) {
         super.onEnabled(context);
-        mIsUpdate = false;
     }
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         super.onUpdate(context, appWidgetManager, appWidgetIds);
 
-        if (appWidgetIds.length > 0 && mIsUpdate) {
-            Intent intent = new Intent(context, ClockService.class);
-            context.startService(intent);
-        }
-        mIsUpdate = false;
+        Intent intent = new Intent(context, ClockService.class);
+        context.startService(intent);
     }
 
     /**

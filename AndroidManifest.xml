@@ -2,8 +2,8 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="jp.hyoromo.vocaloidclockwidget"
-    android:versionCode="1"
-    android:versionName="0.39"
+    android:versionCode="2"
+    android:versionName="0.40"
 >
     <application
         android:icon="@drawable/icon"

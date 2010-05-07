@@ -54,10 +54,8 @@ public class ClockProvider extends AppWidgetProvider {
 
         // 更新対象のAppWidgetを取得(AppWidgetを初めて設置した時 or 二回目以降の初回処理でない場合)
         int count = PreferencesUtil.getPreferences(context, Construct.APP_WIDGET_ID_COUNT, 0);
-        if (count != 0) {
-            if (count == 1 || (count > 1 && appWidgetId == 0)) {
-                setAlarm(context);
-            }
+        if (count == 1 || (count > 1 && appWidgetId == 0)) {
+            setAlarm(context);
         }
 
         // 時計の更新はServiceで行う

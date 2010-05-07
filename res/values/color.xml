@@ -2,4 +2,6 @@
 <resources>
     <color name="text">#ff000000</color>
     <color name="manual_background">#ffffffff</color>
+    <color name="light_black">#0a0a0a</color>
+    <color name="light_white">#fafafa</color>
 </resources>

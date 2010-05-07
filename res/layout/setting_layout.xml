@@ -29,6 +29,8 @@
         android:text="@string/setting_btn_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/setting_btn"
+        style="@style/setting_btn"
         android:onClick="onClickOk"
         android:textAppearance="?android:attr/textAppearanceMedium"
     ></Button>

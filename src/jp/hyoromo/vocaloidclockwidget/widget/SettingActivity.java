@@ -75,9 +75,21 @@ public class SettingActivity extends Activity implements OnItemClickListener {
             mPict[i] = res.getDrawable(resId);
         }
 
-        for (int i = 0; i < NUM_MAX; i++) {
-            mPictIndex[i] = i;
+        // キャラクタindex設定
+        String num = PreferencesUtil.getPreferences(getApplicationContext(), "char", "");
+        if ("".equals(num)) {
+            // 初めて設置
+            for (int i = 0; i < NUM_MAX; i++) {
+                mPictIndex[i] = i;
+            }
+        } else {
+            // 二回目以降の設置
+            String[] str = num.split(",");
+            for (int i = 0; i < NUM_MAX; i++) {
+                mPictIndex[i] = Integer.valueOf(str[i]);
+            }
         }
+
     }
 
     /**
@@ -165,8 +177,6 @@ public class SettingActivity extends Activity implements OnItemClickListener {
         // AppWidget配置
         Intent intent = new Intent(SettingActivity.this, ClockProvider.class);
         intent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
-        //        intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, new int[] { mAppWidgetId });
-        //        intent.setAction(Construct.ACTION_ALARM);
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, mAppWidgetId);
         sendBroadcast(intent);
         setResult(RESULT_OK, intent);

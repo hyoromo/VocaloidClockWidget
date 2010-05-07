@@ -2,8 +2,8 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="jp.hyoromo.vocaloidclockwidget"
-    android:versionCode="2"
-    android:versionName="0.40"
+    android:versionCode="3"
+    android:versionName="0.6.0"
 >
     <application
         android:icon="@drawable/icon"
@@ -26,25 +26,17 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="jp.hyoromo.vocaloidclockwidget.ACTION_ALARM" />
+            </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget"
             ></meta-data>
         </receiver>
 
-        <!-- 時計更新通知をReceive -->
-        <receiver
-            android:name=".service.ClockReceiver"
-        >
-            <intent-filter>
-                <action android:name="jp.hyoromo.vocaloidclockwidget.ACTION_ALARM" />
-            </intent-filter>
-        </receiver>
-
         <!-- 時計更新用のService -->
-        <service
-            android:name=".service.ClockService"
-        ></service>
+        <service android:name=".widget.ClockService" />
 
         <!-- マニュアル -->
         <activity

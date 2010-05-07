@@ -1,8 +1,8 @@
 package jp.hyoromo.vocaloidclockwidget.util;
 
  public class L {
-    //    public static final String TAG = "VocaloidClockWidget";
-    //
+    public static final String TAG = "VocaloidClockWidget";
+
     //    public static void v(String msg) {
     //        android.util.Log.v(TAG, msg);
     //    }

@@ -2,6 +2,7 @@ package jp.hyoromo.vocaloidclockwidget.widget;
 
 import jp.hyoromo.vocaloidclockwidget.ManualActivity;
 import jp.hyoromo.vocaloidclockwidget.R;
+import jp.hyoromo.vocaloidclockwidget.util.Construct;
 import jp.hyoromo.vocaloidclockwidget.util.PreferencesUtil;
 import jp.hyoromo.vocaloidclockwidget.widget.data.ListData;
 import android.app.Activity;
@@ -155,13 +156,19 @@ public class SettingActivity extends Activity implements OnItemClickListener {
             }
             save += mPictIndex[i];
         }
+
+        // キャラ情報を保存
         PreferencesUtil.setPreferences(getApplicationContext(), "char", save);
+        // AppWidget数をインクリメント
+        PreferencesUtil.countUpPreferences(this, Construct.APP_WIDGET_ID_COUNT, 0, 1);
 
         // AppWidget配置
-        AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(getApplicationContext());
-        ClockProvider.updateAppWidget(getApplicationContext(), appWidgetManager, mAppWidgetId);
-        Intent intent = new Intent();
+        Intent intent = new Intent(SettingActivity.this, ClockProvider.class);
+        intent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+        //        intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, new int[] { mAppWidgetId });
+        //        intent.setAction(Construct.ACTION_ALARM);
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, mAppWidgetId);
+        sendBroadcast(intent);
         setResult(RESULT_OK, intent);
         finish();
     }
